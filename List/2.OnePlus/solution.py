@@ -1,4 +1,4 @@
-digit = [9] 
+digit = [int(input("Enter the Digit: "))] 
 digits_in_str = ''
 result = []
 for i in range(-1, -len(digit)-1, -1):
