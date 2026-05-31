@@ -36,7 +36,7 @@ Output: [1,1]
 
 Explanation:
 
-The array remains the same when reversed. Thus, ans = [1, 1].
+The array remains the same when reversed. Thus, ans = [1, 1]
 '''
 
 nums = [1,2,3]
