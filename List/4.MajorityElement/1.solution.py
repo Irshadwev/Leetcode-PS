@@ -26,10 +26,12 @@ The input is generated such that a majority element will exist in the array.
 Follow-up: Could you solve the problem in linear time and in O(1) space?
 '''
 
-
 nums = [3,2,3]
-numslenght = len(nums)
-for i in range(numslenght):
-    if (nums.count(nums[i]) > 1 and nums.count(nums[i]) > numslenght/2):
-        print(nums[i])
-        break
+for i in range(len(nums)):
+    count = 0 
+    for j in range(len(nums)):
+        if(nums[i] == nums[j]):
+            count += 1
+            if (count >= 1 and count > len(nums)/2):
+                result = nums[i]
+print(result)

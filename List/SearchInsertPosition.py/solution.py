@@ -20,11 +20,19 @@ Output: 4
 '''
 
 nums = [1,3,5,6]
-target = 7
+def assendingsort(nums):
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if (nums[i] > nums[j]):
+                sort = nums[i]
+                nums[i] = nums[j]
+                nums[j] = sort
+    return nums  
+
+target = 2
 result = 0
 if (target not in nums):
-        nums.append(target)
-        nums.sort()
-        print(nums.index(target))
+    nums.append(target)
+    assendingsort(nums)  # Function call
 if (target in nums):
         print(nums.index(target))

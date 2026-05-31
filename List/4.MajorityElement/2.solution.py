@@ -6,5 +6,5 @@ for i in range(numslenght):
         if (nums[i] == nums[j]):
             count += 1
     if(count > 1 and count > numslenght/2):
-            print(nums[i])
-            break
+        print(nums[i])
+        break
