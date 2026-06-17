@@ -41,12 +41,14 @@ The array remains the same when reversed. Thus, ans = [1, 1]
 
 nums = [1,2,3]
 
-ans = []
+def concatWithReverse(nums: list[int]) -> list[int]:
+        ans = []
 
-for i in range(len(nums)):
-    ans.append(nums[i])
+        for i in range(len(nums)):
+            ans.append(nums[i])
 
-for i in range(-1, -1-len(nums), -1):
-    ans.append(nums[i])
-    
-print(ans)
+        for i in range(-1, -1-len(nums), -1):
+            ans.append(nums[i])
+
+        return ans
+print(concatWithReverse(nums))
